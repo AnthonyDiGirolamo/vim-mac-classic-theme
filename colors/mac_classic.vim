@@ -19,7 +19,7 @@ let g:colors_name = "mac_classic"
 " Colors: {{{1
 " TODO figure out how to not highlight TODO
 "
-" #000000
+" #1
 " #3C4C72 - BLUE/GREY - cursor, rails helpers
 " #0000A2 - D.BLUE - numbers & function names
 " #1E39F6 - BLUE
@@ -57,6 +57,11 @@ hi Folded  guifg=#0066FF ctermfg=27 guibg=#FFFFFF ctermbg=15
 " StatusLine: {{{2
 hi StatusLine  guifg=#000000 ctermfg=0 guibg=#C6DEFF ctermbg=189 gui=italic
 hi StatusLineNC  guifg=#000000 ctermfg=0 guibg=#EFEFEF ctermbg=7 gui=NONE
+
+" Tab Bar
+hi TabLine     gui=none guibg=#F0F6FF guifg=#000000 ctermfg=245 ctermbg=254 cterm=None
+hi TabLineSel  gui=none guibg=#0066FF guifg=#FFFFFF ctermfg=255 ctermbg=240 cterm=Bold
+hi TabLineFill gui=none guibg=#F0F6FF               ctermfg=254 ctermbg=254 cterm=None
 
 " Search: {{{2
 " [IncSearch is stronger than Search]
@@ -163,7 +168,7 @@ hi javaScriptSpecial  guifg=#00BC41 ctermfg=35 gui=NONE
 " syntax file does not create matches for some items. In
 " particular:
 " * javaScriptArgument - e.g. function(argument)
-" * javaScriptFuncName for object literal style functions - e.g.: 
+" * javaScriptFuncName for object literal style functions - e.g.:
 "     myFunction: function() { ... }
 
 " YAML: {{{1
